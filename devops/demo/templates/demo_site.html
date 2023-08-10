@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(238,174,202);
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: Blue;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(131,58,180);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: yellow;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h1>Getting to Know Me: A Glimpse into My Journey</h1>
+</header>
+
+<main>
+  <section>
+    <h2>Introduction</h2>
+    <p>Hello, readers! Welcome to my corner of the internet. Today, I want to take a moment to introduce myself and share some insights into my journey, experiences, and passions. Grab a cup of your favorite beverage, sit back, and let's dive into my story.</p>
+  </section>
+
+  <section>
+    <h2>Early Beginnings</h2>
+    <p>My story begins in [Your Birthplace], where I took my first breath and embarked on this remarkable journey called life. From a young age, I was curious and full of questions, always eager to explore the world around me. Whether it was dismantling household appliances (much to my parents' chagrin) or losing myself in books, my thirst for knowledge was insatiable.</p>
+  </section>
+
+ <section>
+    <h2>Education and Growth</h2>
+    <p>As the years went by, my educational journey unfolded. I attended [Your School/University Name], where I pursued my passion for [Your Area of Study]. Those years were a period of immense growth for me, both intellectually and personally. I learned not only about my chosen field but also about teamwork, perseverance, and the value of stepping out of my comfort zone.</p>
+  </section>
+
+ <section>
+    <h2>Passions and Hobbies</h2>
+    <p>Beyond the classroom, I'm a devoted [Your Hobbies/Passions]. When I'm not immersed in [Your Hobby], you can find me [Another Interest or Hobby]. These activities not only bring me joy but also provide me with a sense of balance and perspective in our fast-paced world.</p>
+  </section>
+
+ <section>
+    <h2>Proffesional Journey</h2>
+    <p>After completing my education, I embarked on a professional journey that led me to [Your Career Path]. With each role and project, I've honed my skills in [Your Skills] and had the opportunity to collaborate with incredible individuals. The challenges I've faced have taught me resilience and the importance of continuous learning.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>Thank you for joining me on this brief journey into my life. I hope you've enjoyed learning a bit about me and what makes me tick. Remember, life is an ongoing adventure, and I can't wait to see what the next chapter holds.</p>
+  <p>Feel free to connect with me on [Your Social Media Handles] to stay updated on my journey and engage in meaningful conversations. Until next time, take care and keep chasing your dreams!</p>
+</footer>
+
+</body>
+</html>
+
